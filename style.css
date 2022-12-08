@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+/*     font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-image: url("images/bg-desktop.svg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--Violet);
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.container {
+  padding: 0 110px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.flex-container .img {
+  width: 100%;
+}
+
+.flex-container .img img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.flex-container .text {
+  padding-left: 100px;
+  align-self: center;
+  width: 100%;
+}
+
+button {
+  padding: 15px 70px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 600;
+  color: var(--Violet);
+  box-shadow: 15px 10px 20px -10px #000;
+  transition: all 0.15s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--SoftMagenta);
+  color: #fff;
+}
+
+.icons-section .flex-container {
+  justify-content: flex-end;
+}
+
+.icons-section .icon-container ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.icons-section .icon-container ul li {
+  border-radius: 100%;
+  border: 1px solid #fff;
+  margin: 0 10px;
+  transition: all 0.15s ease-in-out;
+}
+
+.icons-section .icon-container ul li:hover {
+  border-color: var(--SoftMagenta);
+}
+
+.icons-section .icon-container ul li a i {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 15px 15px;
+  transition: all 0.15s ease-in-out;
+}
+
+.icons-section .icon-container ul li a i:hover {
+  color: var(--SoftMagenta);
+}
+
+.icons-section .icon-container ul li a:hover {
+  color: var(--SoftMagenta);
+}
+
+.attribution {
+  margin: 50px 0 20px 0;
+  text-align: center;
+  font-size: 0.5em;
+}
+
+.attribution a {
+  color: #fff;
+}
+
+.icons-section .icon-container ul li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 1350px) {
+  body {
+    font-size: 1.4em;
+    background-image: url("images/bg-mobile.svg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    width: auto;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-container .img {
+    max-width: 70%;
+  }
+
+  .flex-container .text {
+    width: 70%;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 80px;
+  }
+
+  button {
+    width: 60%;
+  }
+
+  .icons-section .icon-container ul li a i {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 950px) {
+  body {
+    font-size: 1.2rem;
+    background-image: url("images/bg-mobile.svg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+  .container {
+    width: 100%;
+    padding: 0 40px;
+    margin-top: 50px;
+  }
+
+  header .container .logo-container {
+    max-width: 50%;
+    align-self: flex-start;
+  }
+
+  header .container .logo-container img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    text-align: center;
+    width: auto;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-container .img {
+    max-width: 100%;
+  }
+
+  .flex-container .text {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 80px;
+  }
+
+  button {
+    width: 80%;
+    padding: 10px 50px;
+    font-size: 0.8em;
+  }
+
+  .icons-section .flex-container {
+    align-items: center;
+  }
+
+  .icons-section .icon-container ul li:last-child {
+    margin-right: 0;
+  }
+
+  .icons-section .icon-container ul li a i {
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.8em;
+  }
+}
